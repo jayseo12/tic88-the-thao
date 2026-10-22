@@ -411,7 +411,6 @@
     .person strong { display: block; font-size: 15px; font-weight: 700; color: #fff; }
     .person span { display: block; font-size: 12px; color: rgba(255, 255, 255, 0.6); text-transform: uppercase; letter-spacing: 0.05em; }
 
-    /* FOOTER CTA */
     .footer-cta {
       padding: 90px 0;
       background: linear-gradient(135deg, var(--navy) 0%, var(--primary) 100%);
@@ -436,14 +435,53 @@
     footer { background: #021a0c; color: rgba(255, 255, 255, 0.5); padding: 24px 0; font-size: 13px; border-top: 1px solid #052e16; }
     .footer-row { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
 
-    /* ANIMATION */
+     .text-links-section {
+      background: #031409;
+      padding: 40px 0;
+      border-top: 1px solid rgba(0, 168, 89, 0.2);
+    }
+    .text-links-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 20px;
+      font-family: var(--font-heading);
+      letter-spacing: 0.03em;
+    }
+    .text-links-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 12px;
+      align-items: center;
+    }
+    .text-link-item {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .text-link-item:hover {
+      border-color: var(--primary-2);
+      color: #fff;
+      background: rgba(255, 123, 0, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 123, 0, 0.2);
+    }
+  
     [data-reveal] {
       opacity: 0; transform: translateY(30px);
       transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
     [data-reveal].is-visible { opacity: 1; transform: none; }
 
-    /* RESPONSIVE LAYOUT */
     @media (max-width: 1024px) {
       .game-grid { grid-template-columns: repeat(2, 1fr); }
       .reason-grid, .review-grid { grid-template-columns: 1fr 1fr; }
@@ -570,6 +608,12 @@
         <a class="btn btn-primary js-link js-text" data-key="footerCta.btn" data-link="register" style="position: relative; z-index: 2;" href="#">ĐĂNG KÝ NGAY <span>↗</span></a>
       </div>
     </section>
+    <section class="text-links-section">
+      <div class="container">
+        <h3 class="text-links-title">Text Link:</h3>
+        <div class="text-links-list" id="textLinksList"></div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -683,12 +727,53 @@
         { name: "Tiến Đạt", role: "Hội viên VIP", avatar: "TĐ", quote: "Tông màu xanh lá và cam của Tic88 tạo cảm giác rất thể thao. Kèo nhà cái ở đây chuẩn, dễ soi dễ trúng.", stars: 5 },
         { name: "Thành Long", role: "Cao thủ soi kèo", avatar: "TL", quote: "Từ ngày cược bóng đá Tic88 tôi hoàn toàn yên tâm. Nạp rút siêu tốc và cập nhật tỷ số bóng đá cực kỳ nhanh nhạy.", stars: 5 },
         { name: "Quang Huy", role: "Thành viên thân thiết", avatar: "QH", quote: "Giao diện thể thao Tic88 làm tối ưu vô cùng mượt mà. Đặt cược nhanh, nhảy kèo chuẩn, 10 điểm cho chất lượng.", stars: 5 }
-      ]
+      ],
+       textLinks: [
+        { text: "siti scommesse senza licenza AAMS", url: "#" },
+        { text: "keo nha cai", url: "#" },
+        { text: "Soccervista", url: "#" },
+        { text: "Kèo nhà cái", url: "#" },
+        { text: "https://tylekeonhacai.life/", url: "https://tylekeonhacai.life/" },
+        { text: "b52", url: "#" },
+        { text: "tỷ lệ kèo", url: "#" },
+        { text: "kèo bóng đá", url: "#" },
+        { text: "go88", url: "#" },
+        { text: "Football prediction", url: "#" },
+        { text: "jbo thailand", url: "#" },
+        { text: "https://keonhacai55.de/", url: "https://keonhacai55.de/" },
+        { text: "www fun88 com login", url: "#" },
+        { text: "keo nha cai", url: "#" },
+        { text: "https://fun88.social/", url: "https://fun88.social/" },
+        { text: "188bet", url: "#" },
+        { text: "https://mb66club.com/", url: "https://mb66club.com/" },
+        { text: "kqbd", url: "#" },
+        { text: "https://dt68.la/", url: "https://dt68.la/" },
+        { text: "Mb66", url: "#" },
+        { text: "79win", url: "#" },
+        { text: "JBO", url: "#" },
+        { text: "789win", url: "#" },
+        { text: "tài xỉu online", url: "#" },
+        { text: "SHBET", url: "#" },
+        { text: "keo nha cai", url: "#" },
+        { text: "trang cá cược bóng đá", url: "#" },
+        { text: "789club", url: "#" },
+        { text: "Nhà cái Sv368", url: "#" },
+        { text: "truc tiep bong da", url: "#" },
+        { text: "Xôi Lạc Live", url: "#" },
+        { text: "GEEKINCO", url: "#" },
+        { text: "Xoso66", url: "#" },
+        { text: "kqbd", url: "#" },
+        { text: "Keo ha cai", url: "#" },
+        { text: "7m", url: "#" },
+        { text: "b52", url: "#" },
+        { text: "HELLO88", url: "#" },
+        { text: "7m", url: "#" },
+        { text: "nowgoal", url: "#" },
+        { text: "keonhacai5", url: "#" }
+      ]  
     };
 
-    /* =========================================================
-       2) KHỞI TẠO TỰ ĐỘNG DỮ LIỆU VÀ TỰ ĐỘNG RENDERING
-       ========================================================= */
+
     const $ = (selector, root = document) => root.querySelector(selector);
     const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
@@ -708,20 +793,17 @@
       document.documentElement.style.setProperty(cssVar, value);
     });
 
-    /* Ghi đè ảnh nền các section */
     setCssVar("--hero-bg", SITE_CONFIG.assets.heroBg);
     setCssVar("--sports-bg", SITE_CONFIG.assets.sportsBg);
     setCssVar("--games-bg", SITE_CONFIG.assets.gamesBg);
     setCssVar("--reasons-bg", SITE_CONFIG.assets.reasonsBg);
     setCssVar("--reviews-bg", SITE_CONFIG.assets.reviewsBg);
 
-    /* Cập nhật Iframe Live Score */
     const scoreboardIframe = $(".scoreboard-iframe iframe");
     if (scoreboardIframe && SITE_CONFIG.assets.scoreboardIframe) {
       scoreboardIframe.src = SITE_CONFIG.assets.scoreboardIframe;
     }
 
-    /* Logo Brand */
     const logoLink = $(".js-logo");
     if (logoLink) {
       logoLink.href = SITE_CONFIG.brand.canonical || "#home";
@@ -730,7 +812,6 @@
       }
     }
 
-    /* SEO metadata */
     document.title = SITE_CONFIG.seo.title;
     setMeta('meta[name="description"]', SITE_CONFIG.seo.description);
     setMeta('meta[name="keywords"]', SITE_CONFIG.seo.keywords);
@@ -743,13 +824,11 @@
     const canonical = $('link[rel="canonical"]');
     if (canonical) canonical.href = SITE_CONFIG.brand.canonical;
 
-    /* Render Hero Title */
     const heroTitleEl = $(".js-hero-title");
     if (heroTitleEl && SITE_CONFIG.text.hero) {
       heroTitleEl.innerHTML = `${SITE_CONFIG.text.hero.mainTitle} <span>${SITE_CONFIG.text.hero.highlightTitle}</span>`;
     }
 
-    /* Render Section Headings */
     $$(".js-head-title").forEach(el => {
       const key = el.dataset.key;
       if (key && SITE_CONFIG.text[key]) {
@@ -758,7 +837,6 @@
       }
     });
 
-    /* Render Text động qua data-key */
     $$(".js-text").forEach(el => {
       const path = el.dataset.key.split('.');
       let val = SITE_CONFIG.text;
@@ -779,7 +857,6 @@
       }
     });
 
-    /* Gán link CTA */
     function applyLinks(root = document) {
       $$(".js-link", root).forEach(el => {
         const key = el.dataset.link;
@@ -788,7 +865,6 @@
     }
     applyLinks();
 
-    /* Render Game Grid */
     const gameGrid = $("#gameGrid");
     if(gameGrid) {
       gameGrid.innerHTML = SITE_CONFIG.games.map(game => `
@@ -806,7 +882,6 @@
       applyLinks(gameGrid);
     }
 
-    /* Render Reasons Grid */
     const reasonGrid = $("#reasonGrid");
     if(reasonGrid) {
       reasonGrid.innerHTML = SITE_CONFIG.reasons.map(reason => `
@@ -818,7 +893,6 @@
       `).join("");
     }
 
-    /* Render Reviews Grid */
     const reviewGrid = $("#reviewGrid");
     if(reviewGrid) {
       reviewGrid.innerHTML = SITE_CONFIG.reviews.map(review => `
@@ -836,7 +910,6 @@
       `).join("");
     }
 
-    /* Reveal Animation trên cuộn trang */
     const revealItems = $$("[data-reveal]");
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -852,7 +925,6 @@
       observer.observe(el);
     });
 
-    /* Set current year */
     const yearEl = $("#year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
   </script>
